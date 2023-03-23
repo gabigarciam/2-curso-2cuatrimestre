@@ -1,0 +1,8 @@
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="algestudiante.p0.MatrizOperaciones"><rhs name\="algestudiante.p0.MatrizOperaciones"/></lhs><lhs name\="algestudiante.p2.Vector"><rhs name\="algestudiante.p2.RapidoCentral"/><rhs name\="algestudiante.p2.RapidoFatal"/><rhs name\="algestudiante.p2.RapidoMediana"/></lhs><lhs name\="algestudiante.p32.KeyPoint"><rhs name\="algestudiante.p32.KeyPoint"/></lhs><lhs name\="algestudiante.p32.SkylineProblem"><rhs name\="algestudiante.p32.SkylineProblem"/></lhs><lhs name\="algestudiante.p32.Skyline"><rhs name\="algestudiante.p32.Skyline"/></lhs><lhs name\="algestudiante.p4.Defensa"><rhs name\="algestudiante.p4.Defensa"/></lhs><lhs name\="java.util.Collection"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.lang.Iterable"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.List"><rhs name\="java.util.ArrayList"/></lhs></history>
+content_assist_number_of_computers=13
+eclipse.preferences.version=1
+org.eclipse.jdt.ui.formatterprofiles.version=22
+spelling_locale_initialized=true
+typefilter_migrated_2=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

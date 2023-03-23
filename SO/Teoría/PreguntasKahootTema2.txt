@@ -1,0 +1,189 @@
+ ¿Cu´al crees que es la mejor definici´on de proceso?
+– El c´odigo de un programa
+– Un programa en ejecuci´on
+– Una abstracci´on creada por el SO para representar programas
+– Un c´odigo ejecutable.
+ ¿Qu´e recursos necesita un proceso?
+– Procesador
+– Memoria
+– Dispositivos de e/s
+– Recursos creados por el SO, como ficheros.
+ ¿Cu´ando recibe recursos un proceso?
+– Cuando lo crea el SO.
+– Cuando los pida el proceso
+– Cuando otro proceso se los ceda
+– Cuando el proceso termine.
+ ¿C´omo es posible ejecutar varios procesos simult´aneamente?
+– No es posible.
+– Alternando la ejecuci´on de los procesos
+– Necesariamente necesitamos m´as de 1 procesador.
+– Ejecutando un proceso mientras otro espera mientras una E/S se ejecuta.
+ ¿Es realista la situaci´on mostrada en la imagen?
+– S´ı. Es un ejemplo t´ıpico de multiprogramaci´on.
+– No. No pueden ejecutarse varios procesos a la vez.
+– No. Falta la ejecuci´on del SO
+– S´ı. Alterna la ejecuci´on de procesos.
+ ¿Cu´al de la siguiente es informaci´on que caracterice al proceso en un instante dado?
+– Fecha de creaci´on del programa.
+– C´odigo del programa
+– Datos del programa.
+– Pila (stack) del programa
+ ¿Cu´al de la siguiente es informaci´on que caracterice al proceso en un instante dado?
+– Contenido del contador del programa del procesador (PC)
+– Contenido de la Palabra de Estado del procesador (PSW)
+– Contenido de todos los registros del procesador.
+– Estado de los ficheros abiertos por el proceso.
+ ¿Cu´al de la siguiente es informaci´on que caracterice al proceso en un instante dado?
+1
+– Contenido del contador del programa del procesador (PC)
+– Contenido de la Palabra de Estado del procesador (PSW)
+– Contenido de todos los registros del procesador.
+– Estado de los ficheros abiertos por el proceso.
+ ¿En qu´e estados puede estar un proceso?
+– Ejecut´andose
+– Esperando
+– Existente
+– Inexistente
+ ¿Por qu´e motivos puede un procesador dejar la CPU e ir a Bloqueado?
+– Porque se le acabe el tiempo asignado.
+– Porque cede voluntariamente la CPU a otro proceso.
+– Porque va a realizar una E/S
+– Porque termina su ejecuci´on
+ D´onde salta la CPU cuando aparece una interrupci´on?
+– Siempre a la misma instrucci´on del SO.
+– A alguna direcci´on de memoria dependiendo del nº de interr.
+– A alguna instrucci´on a la que apunta un vector de Interr.
+– A la siguiente instrucci´on del c´odigo del prog. del usuario.
+ Cuando se termina de ejecutar un manejador de interrupci´on
+– Se reanuda la ejecuci´on del proceso interrumpido.
+– Se reanuda la ejecuci´on de un proceso distinto al interrumpido.
+– Puede reanudarse la ejecuci´on de cualquier proceso.
+– Puede reanudarse la ejecuci´on de cualquier proceso listo para ejecuci´on.
+ Qui´en (o qu´e) lleva a cabo el cambio de proceso?
+– Un usuario: el administrador del sistema
+– Cualquier usuario del sistema.
+– El hardware
+– El sistema operativo.
+ En el cambio de procesos, qu´e registros copia el SO de la CPU al PCB?
+– Todos los registros de la CPU.
+– Todos los registros de la CPU menos el PC y el PSW
+– S´olo el PC y el PSW.
+– Ninguno. El Hw. se ocupa cuando hay una interrupci´on.
+ Qu´e interrupci´on puede causar un cambio de proceso?
+– S´olo la interrupci´on de reloj.
+– S´olo una excepci´on.
+– S´olo las interrupciones externas.
+– Cualquier clase de interrupci´on.
+ Qu´e elementos deben ser creados/asignados cuando por el SO al crear un proceso?
+– Un procesador nuevo para el proceso.
+– Espacio de memoria para el proceso.
+– Una entrada en la tabla de procesos para el proceso.
+– Un nuevo vector de interrupciones para el proceso.
+ Qu´e diferencia hay entre proceso y programa?
+– No hay diferencia.
+– El proceso es est´atico. El programa es una entidad din´amica.
+2
+– El programa es est´atico. El proceso es una entidad din´amica.
+– Los dos son conceptos est´aticos.
+ La multiprogramaci´on es posible ´unicamente cuando hay varios procesadores
+– " "
+ Un proceso cambia su estado de Bloqueado a Listo ...
+– Cuando el evento por el que esperaba (E/S, ...) ha ocurrido
+– Cuando el SO elige ese proceso para ejecutarlo.
+– Nunca
+– Cuando otro proceso inicia una operaci´on de de E/S
+ En el modelo de proceso de 5 estados el estado Nuevo representa un proceso que tiene
+todo lo necesario para ejecutase
+– " "
+ El cambio de estado de un proceso se puede realizar sin intervenci´on del SO
+– " "
+ Un proceso cambia su estado de Bloqueado a Ejecutando ...
+– Cuando el evento por el que esperaba (E/S, ...) ha ocurrido
+– Cuando el SO elige ese proceso para ejecutarlo.
+– Nunca
+– Cuando otro proceso inicia una operaci´on de de E/S
+ Un proceso cambia su estado de Ejecutando a Finalizado ...
+– S´olo cuando el propio proceso decide terminar.
+– Cuando el SO decide terminar ese proceso.
+– Cuando otro proceso decide matar ese proceso.
+– Cuando el propietario decide matar ese proceso.
+ Cuando un proceso est´a ejecutando y debe esperar por un evento, se mueve al estado
+– Listo
+– Bloqueado
+– Nuevo
+– Finalizado
+ Cu´al de los siguientes elementos no se almacenan en el PCB del proceso?
+– El c´odigo del programa.
+– Una copia de los registros de la CPU
+– Punteros para implementar la cola de listos.
+– El estado del proceso.
+ ¿Cu´antos PCBs tiene un proceso?
+– Uno
+– Dos.
+– Depende del tipo de proceso.
+– Cero.
+ Cuando se termina de ejecutar un manejador de interrupciones siempre se reanuda el
+proceso interrumpido
+– " "
+ Cuando se termina de ejecutar un manejador de interrupciones siempre se reanuda un
+proceso distinto al interrumpido
+– " "
+ El cambio del proceso en ejecuci´on siempre se produce como consecuencia del tratamiento
+de una interrupci´on.
+– " "
+ Procesos e hilos son sin´onimos: no hay diferencia entre estos dos conceptos
+– " "
+ Normalmente, una aplicaci´on con m´ultiples procesos es m´as eficiente que una multihilo
+equivalente
+– " "
+ Las operaciones de comunicaci´on entre hilos del mismo proceso son m´as eficientes que
+entre procesos.
+– " "
+ El cambio entre hilos del mismo proceso es m´as eficiente que el cambio de proceso.
+– " "
+ Para desarrollar una aplicaci´on masivamente paralela en un sistema multiprocesador es
+mejor usar hilos KLT y no ULT.
+– " "
+ Qu´e planificador reduce el grado de multiprogramaci´on del sistema?
+– El planificador a corto plazo.
+– El planificador a medio plazo
+– El planificador a largo plazo.
+– Ninguno de los anteriores.
+ Qu´e planificador aumenta el grado de multiprogramaci´on del sistema?
+– El planificador a corto plazo.
+– El planificador a medio plazo
+– El planificador a largo plazo.
+– Ninguno de los anteriores.
+ Qu´e planificador elige el siguiente proceso a pasar a ejecutando?
+– El planificador a corto plazo.
+– El planificador a medio plazo
+– El planificador a largo plazo.
+– Ninguno de los anteriores.
+ En el modelo de proceso de 5 estados, cu´ando puede fallar la creaci´on de procesos?
+– Cuando no hay suficiente memoria disponible para el proceso.
+– Cuando el proceso es mayor que la memoria del sistema
+– Cuando los dispositivos de E/S est´an ocupados.
+– Cuando la CPU est´a ocupada.
+ El sistema operativo utiliza mecanismos y pol´ıticas. Cu´al es la diferencia?
+– Los mecanismos toman decisiones; las pol´ıticas no.
+– Los mecanismos implementan operaciones; las pol´ıticas toman decisiones.
+– Ambas son sin´onimos para describir pol´ıticas del sistema.
+– Las pol´ıticas implementan operaciones.
+ Dentro de los objetivos de la planificaci´on est´a
+– Maximizar las m´etricas de tiempos de los procesos.
+– Maximizar las m´etricas de tiempos del sistema.
+– Minimizar las m´etricas de tiempos del sistema.
+– Minimizar las m´etricas de tiempos de los procesos.
+ Para un sistema de procesamiento por lotes, ¿cu´al de los siguientes objetivos es m´as
+4
+importante?
+– Minimizar el tiempo de respuesta.
+– Minimizar la tasa de trabajos completados (throughput).
+– Maximizar el uso del procesador.
+– Que la planificaci´on esa imparcial.
+ Para un sistema de procesamiento por lotes, ¿cu´al de los siguientes objetivos es m´as
+importante?
+– Minimizar el tiempo de respuesta.
+– Minimizar la tasa de trabajos completados (throughput).
+– Maximizar el uso del procesador.
+– Que la planificaci´on esa imparcial.

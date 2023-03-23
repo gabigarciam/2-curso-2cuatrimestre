@@ -1,0 +1,28 @@
+C:\Users\uo289097\Desktop\lab6\lab6\generators\bin\Debug\net5.0\generators.exe
+C:\Users\uo289097\Desktop\lab6\lab6\generators\bin\Debug\net5.0\generators.deps.json
+C:\Users\uo289097\Desktop\lab6\lab6\generators\bin\Debug\net5.0\generators.runtimeconfig.json
+C:\Users\uo289097\Desktop\lab6\lab6\generators\bin\Debug\net5.0\generators.runtimeconfig.dev.json
+C:\Users\uo289097\Desktop\lab6\lab6\generators\bin\Debug\net5.0\generators.dll
+C:\Users\uo289097\Desktop\lab6\lab6\generators\bin\Debug\net5.0\generators.pdb
+C:\Users\uo289097\Desktop\lab6\lab6\generators\obj\Debug\net5.0\generators.csproj.AssemblyReference.cache
+C:\Users\uo289097\Desktop\lab6\lab6\generators\obj\Debug\net5.0\generators.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\uo289097\Desktop\lab6\lab6\generators\obj\Debug\net5.0\generators.csproj.CoreCompileInputs.cache
+C:\Users\uo289097\Desktop\lab6\lab6\generators\obj\Debug\net5.0\generators.dll
+C:\Users\uo289097\Desktop\lab6\lab6\generators\obj\Debug\net5.0\refint\generators.dll
+C:\Users\uo289097\Desktop\lab6\lab6\generators\obj\Debug\net5.0\generators.pdb
+C:\Users\uo289097\Desktop\lab6\lab6\generators\obj\Debug\net5.0\generators.genruntimeconfig.cache
+C:\Users\uo289097\Desktop\lab6\lab6\generators\obj\Debug\net5.0\ref\generators.dll
+C:\Users\gabig\OneDrive\TPP\Laboratorios\lab6 (2)\lab6\lab6\generators\bin\Debug\net5.0\generators.exe
+C:\Users\gabig\OneDrive\TPP\Laboratorios\lab6 (2)\lab6\lab6\generators\bin\Debug\net5.0\generators.deps.json
+C:\Users\gabig\OneDrive\TPP\Laboratorios\lab6 (2)\lab6\lab6\generators\bin\Debug\net5.0\generators.runtimeconfig.json
+C:\Users\gabig\OneDrive\TPP\Laboratorios\lab6 (2)\lab6\lab6\generators\bin\Debug\net5.0\generators.runtimeconfig.dev.json
+C:\Users\gabig\OneDrive\TPP\Laboratorios\lab6 (2)\lab6\lab6\generators\bin\Debug\net5.0\generators.dll
+C:\Users\gabig\OneDrive\TPP\Laboratorios\lab6 (2)\lab6\lab6\generators\bin\Debug\net5.0\generators.pdb
+C:\Users\gabig\OneDrive\TPP\Laboratorios\lab6 (2)\lab6\lab6\generators\obj\Debug\net5.0\generators.csproj.AssemblyReference.cache
+C:\Users\gabig\OneDrive\TPP\Laboratorios\lab6 (2)\lab6\lab6\generators\obj\Debug\net5.0\generators.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabig\OneDrive\TPP\Laboratorios\lab6 (2)\lab6\lab6\generators\obj\Debug\net5.0\generators.csproj.CoreCompileInputs.cache
+C:\Users\gabig\OneDrive\TPP\Laboratorios\lab6 (2)\lab6\lab6\generators\obj\Debug\net5.0\generators.dll
+C:\Users\gabig\OneDrive\TPP\Laboratorios\lab6 (2)\lab6\lab6\generators\obj\Debug\net5.0\refint\generators.dll
+C:\Users\gabig\OneDrive\TPP\Laboratorios\lab6 (2)\lab6\lab6\generators\obj\Debug\net5.0\generators.pdb
+C:\Users\gabig\OneDrive\TPP\Laboratorios\lab6 (2)\lab6\lab6\generators\obj\Debug\net5.0\generators.genruntimeconfig.cache
+C:\Users\gabig\OneDrive\TPP\Laboratorios\lab6 (2)\lab6\lab6\generators\obj\Debug\net5.0\ref\generators.dll
