@@ -1,0 +1,8 @@
+Una aplicación f: X -> Y se dice:
+
+ -Inyectiva si elementos distintos de X van a parar a elementos distintos de Y
+
+ - Epiyectiva/exhaustiva/Sobreyectiva si para cada elemento y contenido en Y existe 
+al menos un x contenido en X, tal que f(x) = y
+
+ -Biyectiva si es inyectiva y exhaustiva a la vez 
