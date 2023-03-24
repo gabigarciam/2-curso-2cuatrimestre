@@ -1,0 +1,14 @@
+C:\Users\uo289097\Desktop\lab7\lab7\linq\bin\Debug\net5.0\linq.exe
+C:\Users\uo289097\Desktop\lab7\lab7\linq\bin\Debug\net5.0\linq.deps.json
+C:\Users\uo289097\Desktop\lab7\lab7\linq\bin\Debug\net5.0\linq.runtimeconfig.json
+C:\Users\uo289097\Desktop\lab7\lab7\linq\bin\Debug\net5.0\linq.runtimeconfig.dev.json
+C:\Users\uo289097\Desktop\lab7\lab7\linq\bin\Debug\net5.0\linq.dll
+C:\Users\uo289097\Desktop\lab7\lab7\linq\bin\Debug\net5.0\linq.pdb
+C:\Users\uo289097\Desktop\lab7\lab7\linq\obj\Debug\net5.0\linq.csproj.AssemblyReference.cache
+C:\Users\uo289097\Desktop\lab7\lab7\linq\obj\Debug\net5.0\linq.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\uo289097\Desktop\lab7\lab7\linq\obj\Debug\net5.0\linq.csproj.CoreCompileInputs.cache
+C:\Users\uo289097\Desktop\lab7\lab7\linq\obj\Debug\net5.0\linq.dll
+C:\Users\uo289097\Desktop\lab7\lab7\linq\obj\Debug\net5.0\refint\linq.dll
+C:\Users\uo289097\Desktop\lab7\lab7\linq\obj\Debug\net5.0\linq.pdb
+C:\Users\uo289097\Desktop\lab7\lab7\linq\obj\Debug\net5.0\linq.genruntimeconfig.cache
+C:\Users\uo289097\Desktop\lab7\lab7\linq\obj\Debug\net5.0\ref\linq.dll

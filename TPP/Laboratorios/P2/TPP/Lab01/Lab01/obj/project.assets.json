@@ -1,0 +1,90 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "angle/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/angle.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/angle.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "angle/1.0.0": {
+      "type": "project",
+      "path": "../angle/angle.csproj",
+      "msbuildProject": "../angle/angle.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "angle >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\uo289097\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\uo289097\\Desktop\\TPP\\Lab01\\Lab01\\Lab01.csproj",
+      "projectName": "Lab01",
+      "projectPath": "C:\\Users\\uo289097\\Desktop\\TPP\\Lab01\\Lab01\\Lab01.csproj",
+      "packagesPath": "C:\\Users\\uo289097\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\uo289097\\Desktop\\TPP\\Lab01\\Lab01\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\uo289097\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "C:\\Users\\uo289097\\Desktop\\TPP\\Lab01\\angle\\angle.csproj": {
+              "projectPath": "C:\\Users\\uo289097\\Desktop\\TPP\\Lab01\\angle\\angle.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

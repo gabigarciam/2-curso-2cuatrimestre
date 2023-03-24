@@ -1,0 +1,96 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\gabig\\OneDrive\\TPP\\Laboratorios\\lab4Clase\\lab3\\stack\\stack.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\gabig\\OneDrive\\TPP\\Laboratorios\\lab4Clase\\lab3\\stack\\stack.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gabig\\OneDrive\\TPP\\Laboratorios\\lab4Clase\\lab3\\stack\\stack.csproj",
+        "projectName": "stack",
+        "projectPath": "C:\\Users\\gabig\\OneDrive\\TPP\\Laboratorios\\lab4Clase\\lab3\\stack\\stack.csproj",
+        "packagesPath": "C:\\Users\\gabig\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gabig\\OneDrive\\TPP\\Laboratorios\\lab4Clase\\lab3\\stack\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\gabig\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\gabig\\OneDrive\\TPP\\Laboratorios\\P2\\ListaPruebas\\ClasesListas\\clases.listas.csproj": {
+                "projectPath": "C:\\Users\\gabig\\OneDrive\\TPP\\Laboratorios\\P2\\ListaPruebas\\ClasesListas\\clases.listas.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "System.Data.DataSetExtensions": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\gabig\\OneDrive\\TPP\\Laboratorios\\P2\\ListaPruebas\\ClasesListas\\clases.listas.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gabig\\OneDrive\\TPP\\Laboratorios\\P2\\ListaPruebas\\ClasesListas\\clases.listas.csproj",
+        "projectName": "clases.listas",
+        "projectPath": "C:\\Users\\gabig\\OneDrive\\TPP\\Laboratorios\\P2\\ListaPruebas\\ClasesListas\\clases.listas.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    }
+  }
+}

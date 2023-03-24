@@ -1,0 +1,128 @@
+Simulator after V2-ex6
+arguments: "prog-V2-E6", "prog-V2-E2"
+
+35 messages loaded from file messagesTCH.txt
+14 messages loaded from file messagesSTD.txt
+0 Asserts Loaded
+[0] User program list:
+[0]     Program [prog-V2-E6] with arrival time [0]
+[0]     Program [prog-V2-E2] with arrival time [0]
+        [0] New process [3 - SystemIdleProcess] moving to the [NEW] state
+        [0] Process [3] created from program [SystemIdleProcess]
+        [0] Process [3 - SystemIdleProcess] moving from the [NEW] state to the [READY] state
+        [0] New process [0 - prog-V2-E6] moving to the [NEW] state
+        [0] Process [0] created from program [prog-V2-E6]
+        [0] Process [0 - prog-V2-E6] moving from the [NEW] state to the [READY] state
+        [0] New process [1 - prog-V2-E2] moving to the [NEW] state
+        [0] Process [1] created from program [prog-V2-E2]
+        [0] Process [1 - prog-V2-E2] moving from the [NEW] state to the [READY] state
+        [0] Running Process Information:
+                [--- No running process ---]
+        [0] Ready-to-run processes queue:
+        USER:[0,5], [1,5] 
+        DAEMONS:[3,100] 
+        [0] PID association with program's name:
+                PID: 0 -> prog-V2-E6
+                PID: 1 -> prog-V2-E2
+                PID: 3 -> SystemIdleProcess
+        [0] Process [0 - prog-V2-E6] moving from the [READY] state to the [EXECUTING] state
+[1] {0D 000 000} IRET 0 0 (PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+[2] {04 004 000} TRAP 4 0 (PC: 1, Accumulator: 0, PSW: 0002 [--------------Z-])
+[3] {0C 002 000} OS 2 0 (PC: 242, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+        [4] Process [0 - prog-V2-E6] will transfer the control of the processor to process [1 - prog-V2-E2]
+        [4] Process [0 - prog-V2-E6] moving from the [EXECUTING] state to the [READY] state
+        [4] Process [1 - prog-V2-E2] moving from the [READY] state to the [EXECUTING] state
+        [4] Running Process Information:
+                [PID: 1, Priority: 5, Queue: USER]
+        [4] Ready-to-run processes queue:
+        USER:[0,5] 
+        DAEMONS:[3,100] 
+        [4] PID association with program's name:
+                PID: 0 -> prog-V2-E6
+                PID: 1 -> prog-V2-E2
+                PID: 3 -> SystemIdleProcess
+[5] {0D 000 000} IRET 0 0 (PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+[6] {0C 009 000} OS 9 0 (PC: 246, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+        [7] Clock interrupt number [1] has occurred
+[8] {0D 000 000} IRET 0 0 (PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+[9] {05 000 000} NOP 0 0 (PC: 1, Accumulator: 0, PSW: 0002 [--------------Z-])
+[10] {05 000 000} NOP 0 0 (PC: 2, Accumulator: 0, PSW: 0002 [--------------Z-])
+[11] {0C 009 000} OS 9 0 (PC: 246, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+        [12] Clock interrupt number [2] has occurred
+[13] {0D 000 000} IRET 0 0 (PC: 2, Accumulator: 0, PSW: 0002 [--------------Z-])
+[14] {05 000 000} NOP 0 0 (PC: 3, Accumulator: 0, PSW: 0002 [--------------Z-])
+[15] {05 000 000} NOP 0 0 (PC: 4, Accumulator: 0, PSW: 0002 [--------------Z-])
+[16] {0C 009 000} OS 9 0 (PC: 246, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+        [17] Clock interrupt number [3] has occurred
+[18] {0D 000 000} IRET 0 0 (PC: 4, Accumulator: 0, PSW: 0002 [--------------Z-])
+[19] {05 000 000} NOP 0 0 (PC: 5, Accumulator: 0, PSW: 0002 [--------------Z-])
+[20] {05 000 000} NOP 0 0 (PC: 6, Accumulator: 0, PSW: 0002 [--------------Z-])
+[21] {0C 009 000} OS 9 0 (PC: 246, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+        [22] Clock interrupt number [4] has occurred
+[23] {0D 000 000} IRET 0 0 (PC: 6, Accumulator: 0, PSW: 0002 [--------------Z-])
+[24] {04 003 000} TRAP 3 0 (PC: 7, Accumulator: 0, PSW: 0002 [--------------Z-])
+[25] {0C 002 000} OS 2 0 (PC: 242, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+        [26] Process [1 - prog-V2-E2] has requested to terminate
+        [26] Process [1 - prog-V2-E2] moving from the [EXECUTING] state to the [EXIT] state
+        [26] Process [0 - prog-V2-E6] moving from the [READY] state to the [EXECUTING] state
+        [26] Running Process Information:
+                [PID: 0, Priority: 5, Queue: USER]
+        [26] Ready-to-run processes queue:
+        USER: -EMPTY-
+        DAEMONS:[3,100] 
+        [26] PID association with program's name:
+                PID: 0 -> prog-V2-E6
+                PID: 1 -> prog-V2-E2
+                PID: 3 -> SystemIdleProcess
+[27] {0D 000 000} IRET 0 0 (PC: 1, Accumulator: 0, PSW: 0002 [--------------Z-])
+[28] {0C 009 000} OS 9 0 (PC: 246, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+        [29] Clock interrupt number [5] has occurred
+[30] {0D 000 000} IRET 0 0 (PC: 1, Accumulator: 0, PSW: 0002 [--------------Z-])
+[31] {0C 009 000} OS 9 0 (PC: 246, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+        [32] Clock interrupt number [6] has occurred
+[33] {0D 000 000} IRET 0 0 (PC: 1, Accumulator: 0, PSW: 0002 [--------------Z-])
+[34] {05 000 000} NOP 0 0 (PC: 2, Accumulator: 0, PSW: 0002 [--------------Z-])
+[35] {0B 000 000} HALT 0 0 (PC: 2, Accumulator: 0, PSW: 0002 [--------------Z-])
+[36] {0C 006 000} OS 6 0 (PC: 244, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+        [37] Process [0 - prog-V2-E6] has generated an exception and is terminating
+        [37] Process [0 - prog-V2-E6] moving from the [EXECUTING] state to the [EXIT] state
+        [37] Process [3 - SystemIdleProcess] moving from the [READY] state to the [EXECUTING] state
+        [37] Running Process Information:
+                [PID: 3, Priority: 100, Queue: DAEMONS]
+        [37] Ready-to-run processes queue:
+        USER: -EMPTY-
+        DAEMONS: -EMPTY-
+        [37] PID association with program's name:
+                PID: 0 -> prog-V2-E6
+                PID: 1 -> prog-V2-E2
+                PID: 3 -> SystemIdleProcess
+[38] {0D 000 000} IRET 0 0 (PC: 183, Accumulator: 0, PSW: 0082 [--------X-----Z-])
+[39] {0C 009 000} OS 9 0 (PC: 246, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+        [40] Clock interrupt number [7] has occurred
+[41] {0D 000 000} IRET 0 0 (PC: 183, Accumulator: 0, PSW: 0082 [--------X-----Z-])
+[42] {0C 009 000} OS 9 0 (PC: 246, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+        [43] Clock interrupt number [8] has occurred
+[44] {0D 000 000} IRET 0 0 (PC: 183, Accumulator: 0, PSW: 0082 [--------X-----Z-])
+[45] {04 003 000} TRAP 3 0 (PC: 184, Accumulator: 0, PSW: 0082 [--------X-----Z-])
+[46] {0C 002 000} OS 2 0 (PC: 242, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+        [47] Process [3 - SystemIdleProcess] has requested to terminate
+        [47] Process [3 - SystemIdleProcess] moving from the [EXECUTING] state to the [EXIT] state
+        [47] The system will shut down now...
+        [47] Running Process Information:
+                [--- No running process ---]
+        [47] Ready-to-run processes queue:
+        USER: -EMPTY-
+        DAEMONS: -EMPTY-
+        [47] PID association with program's name:
+                PID: 0 -> prog-V2-E6
+                PID: 1 -> prog-V2-E2
+                PID: 3 -> SystemIdleProcess
+[48] {0D 000 000} IRET 0 0 (PC: 241, Accumulator: 0, PSW: 0082 [--------X-----Z-])
+[49] {0C 009 000} OS 9 0 (PC: 246, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+        [50] Clock interrupt number [9] has occurred
+[51] {0D 000 000} IRET 0 0 (PC: 241, Accumulator: 0, PSW: 0082 [--------X-----Z-])
+[52] {0C 009 000} OS 9 0 (PC: 246, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+        [53] Clock interrupt number [10] has occurred
+[54] {0D 000 000} IRET 0 0 (PC: 241, Accumulator: 0, PSW: 0082 [--------X-----Z-])
+[55] {0B 000 000} HALT 0 0 (PC: 241, Accumulator: 0, PSW: 0083 [--------X-----ZS])
+[55] END of the simulation

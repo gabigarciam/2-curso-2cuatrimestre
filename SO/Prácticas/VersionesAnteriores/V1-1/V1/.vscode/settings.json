@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "processorProp.C": "cpp",
+        "*.def": "c"
+    }
+}

@@ -1,0 +1,14 @@
+C:\Users\uo289097\Desktop\lab6\lab6\closures\bin\Debug\net5.0\closures.exe
+C:\Users\uo289097\Desktop\lab6\lab6\closures\bin\Debug\net5.0\closures.deps.json
+C:\Users\uo289097\Desktop\lab6\lab6\closures\bin\Debug\net5.0\closures.runtimeconfig.json
+C:\Users\uo289097\Desktop\lab6\lab6\closures\bin\Debug\net5.0\closures.runtimeconfig.dev.json
+C:\Users\uo289097\Desktop\lab6\lab6\closures\bin\Debug\net5.0\closures.dll
+C:\Users\uo289097\Desktop\lab6\lab6\closures\bin\Debug\net5.0\closures.pdb
+C:\Users\uo289097\Desktop\lab6\lab6\closures\obj\Debug\net5.0\closures.csproj.AssemblyReference.cache
+C:\Users\uo289097\Desktop\lab6\lab6\closures\obj\Debug\net5.0\closures.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\uo289097\Desktop\lab6\lab6\closures\obj\Debug\net5.0\closures.csproj.CoreCompileInputs.cache
+C:\Users\uo289097\Desktop\lab6\lab6\closures\obj\Debug\net5.0\closures.dll
+C:\Users\uo289097\Desktop\lab6\lab6\closures\obj\Debug\net5.0\refint\closures.dll
+C:\Users\uo289097\Desktop\lab6\lab6\closures\obj\Debug\net5.0\closures.pdb
+C:\Users\uo289097\Desktop\lab6\lab6\closures\obj\Debug\net5.0\closures.genruntimeconfig.cache
+C:\Users\uo289097\Desktop\lab6\lab6\closures\obj\Debug\net5.0\ref\closures.dll

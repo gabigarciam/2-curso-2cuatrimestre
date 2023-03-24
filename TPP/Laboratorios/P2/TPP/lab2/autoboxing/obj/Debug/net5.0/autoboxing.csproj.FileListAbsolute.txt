@@ -1,0 +1,14 @@
+C:\Users\uo289097\Desktop\TPP\lab2\autoboxing\bin\Debug\net5.0\autoboxing.exe
+C:\Users\uo289097\Desktop\TPP\lab2\autoboxing\bin\Debug\net5.0\autoboxing.deps.json
+C:\Users\uo289097\Desktop\TPP\lab2\autoboxing\bin\Debug\net5.0\autoboxing.runtimeconfig.json
+C:\Users\uo289097\Desktop\TPP\lab2\autoboxing\bin\Debug\net5.0\autoboxing.runtimeconfig.dev.json
+C:\Users\uo289097\Desktop\TPP\lab2\autoboxing\bin\Debug\net5.0\autoboxing.dll
+C:\Users\uo289097\Desktop\TPP\lab2\autoboxing\bin\Debug\net5.0\autoboxing.pdb
+C:\Users\uo289097\Desktop\TPP\lab2\autoboxing\obj\Debug\net5.0\autoboxing.csproj.AssemblyReference.cache
+C:\Users\uo289097\Desktop\TPP\lab2\autoboxing\obj\Debug\net5.0\autoboxing.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\uo289097\Desktop\TPP\lab2\autoboxing\obj\Debug\net5.0\autoboxing.csproj.CoreCompileInputs.cache
+C:\Users\uo289097\Desktop\TPP\lab2\autoboxing\obj\Debug\net5.0\autoboxing.dll
+C:\Users\uo289097\Desktop\TPP\lab2\autoboxing\obj\Debug\net5.0\refint\autoboxing.dll
+C:\Users\uo289097\Desktop\TPP\lab2\autoboxing\obj\Debug\net5.0\autoboxing.pdb
+C:\Users\uo289097\Desktop\TPP\lab2\autoboxing\obj\Debug\net5.0\autoboxing.genruntimeconfig.cache
+C:\Users\uo289097\Desktop\TPP\lab2\autoboxing\obj\Debug\net5.0\ref\autoboxing.dll

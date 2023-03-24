@@ -1,0 +1,14 @@
+C:\Users\uo289097\Desktop\lab6\lab6\currying\bin\Debug\net5.0\currying.exe
+C:\Users\uo289097\Desktop\lab6\lab6\currying\bin\Debug\net5.0\currying.deps.json
+C:\Users\uo289097\Desktop\lab6\lab6\currying\bin\Debug\net5.0\currying.runtimeconfig.json
+C:\Users\uo289097\Desktop\lab6\lab6\currying\bin\Debug\net5.0\currying.runtimeconfig.dev.json
+C:\Users\uo289097\Desktop\lab6\lab6\currying\bin\Debug\net5.0\currying.dll
+C:\Users\uo289097\Desktop\lab6\lab6\currying\bin\Debug\net5.0\currying.pdb
+C:\Users\uo289097\Desktop\lab6\lab6\currying\obj\Debug\net5.0\currying.csproj.AssemblyReference.cache
+C:\Users\uo289097\Desktop\lab6\lab6\currying\obj\Debug\net5.0\currying.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\uo289097\Desktop\lab6\lab6\currying\obj\Debug\net5.0\currying.csproj.CoreCompileInputs.cache
+C:\Users\uo289097\Desktop\lab6\lab6\currying\obj\Debug\net5.0\currying.dll
+C:\Users\uo289097\Desktop\lab6\lab6\currying\obj\Debug\net5.0\refint\currying.dll
+C:\Users\uo289097\Desktop\lab6\lab6\currying\obj\Debug\net5.0\currying.pdb
+C:\Users\uo289097\Desktop\lab6\lab6\currying\obj\Debug\net5.0\currying.genruntimeconfig.cache
+C:\Users\uo289097\Desktop\lab6\lab6\currying\obj\Debug\net5.0\ref\currying.dll
