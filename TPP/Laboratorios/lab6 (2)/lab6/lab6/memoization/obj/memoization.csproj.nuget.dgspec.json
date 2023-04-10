@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gabig\\OneDrive\\TPP\\Laboratorios\\lab6 (2)\\lab6\\lab6\\memoization\\memoization.csproj": {}
+    "C:\\Users\\gabig\\Desktop\\repos\\TPP\\Laboratorios\\lab6 (2)\\lab6\\lab6\\memoization\\memoization.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gabig\\OneDrive\\TPP\\Laboratorios\\lab6 (2)\\lab6\\lab6\\memoization\\memoization.csproj": {
+    "C:\\Users\\gabig\\Desktop\\repos\\TPP\\Laboratorios\\lab6 (2)\\lab6\\lab6\\memoization\\memoization.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabig\\OneDrive\\TPP\\Laboratorios\\lab6 (2)\\lab6\\lab6\\memoization\\memoization.csproj",
+        "projectUniqueName": "C:\\Users\\gabig\\Desktop\\repos\\TPP\\Laboratorios\\lab6 (2)\\lab6\\lab6\\memoization\\memoization.csproj",
         "projectName": "memoization",
-        "projectPath": "C:\\Users\\gabig\\OneDrive\\TPP\\Laboratorios\\lab6 (2)\\lab6\\lab6\\memoization\\memoization.csproj",
+        "projectPath": "C:\\Users\\gabig\\Desktop\\repos\\TPP\\Laboratorios\\lab6 (2)\\lab6\\lab6\\memoization\\memoization.csproj",
         "packagesPath": "C:\\Users\\gabig\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabig\\OneDrive\\TPP\\Laboratorios\\lab6 (2)\\lab6\\lab6\\memoization\\obj\\",
+        "outputPath": "C:\\Users\\gabig\\Desktop\\repos\\TPP\\Laboratorios\\lab6 (2)\\lab6\\lab6\\memoization\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

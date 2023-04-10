@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Fqi+NMmt4naTT6OzHiUirIAFCu8uL9b1KgLKKPOjWA8UwhB8jpSdS6IeoAM57qCrLYRRIlHQji4EwYl4x31rxw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\gabig\\Desktop\\repos\\TPP\\Laboratorios\\Examen\\Prácticas\\lab6 (2)\\lab6\\lab6\\closures\\closures.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gabig\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\gabig\\.nuget\\packages\\system.data.datasetextensions\\4.5.0\\system.data.datasetextensions.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

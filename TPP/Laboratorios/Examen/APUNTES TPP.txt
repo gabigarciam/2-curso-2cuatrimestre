@@ -1,0 +1,22 @@
+APUNTES TPP
+
+P6: Generadores(yield...), Currificación y Memoization(guarda resultados anteriores en un IDictionary)
+
+P7: Métodos extensores(Map, ForEach, Media, Find, Filter, Reduce, RightPosition)
+
+P8: consultas con métodos Linq
+
+Map	    - Select
+Find      - First
+Filter    - Reduce
+Reduce    - Aggregate
+
+• Func<T>: Método sin parámetros que retorna un T
+• Func<T1,T2>: Método con un parámetro T1 que retorna un T2
+• …
+• Action: Método sin parámetros ni retorno
+• Action<T>: Método con un parámetro T sin retorno
+• …
+• Predicate<T>: Método que retorna un bool y recibe un T
+
+Extensores pueden ser de cualquier tipo, pero los generadores no

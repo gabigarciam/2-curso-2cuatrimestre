@@ -1,0 +1,14 @@
+C:\Users\uo289097\Desktop\TPP\lab2\default.argument.values\bin\Debug\net5.0\@default.argument.values.exe
+C:\Users\uo289097\Desktop\TPP\lab2\default.argument.values\bin\Debug\net5.0\@default.argument.values.deps.json
+C:\Users\uo289097\Desktop\TPP\lab2\default.argument.values\bin\Debug\net5.0\@default.argument.values.runtimeconfig.json
+C:\Users\uo289097\Desktop\TPP\lab2\default.argument.values\bin\Debug\net5.0\@default.argument.values.runtimeconfig.dev.json
+C:\Users\uo289097\Desktop\TPP\lab2\default.argument.values\bin\Debug\net5.0\@default.argument.values.dll
+C:\Users\uo289097\Desktop\TPP\lab2\default.argument.values\bin\Debug\net5.0\@default.argument.values.pdb
+C:\Users\uo289097\Desktop\TPP\lab2\default.argument.values\obj\Debug\net5.0\default.argument.values.csproj.AssemblyReference.cache
+C:\Users\uo289097\Desktop\TPP\lab2\default.argument.values\obj\Debug\net5.0\default.argument.values.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\uo289097\Desktop\TPP\lab2\default.argument.values\obj\Debug\net5.0\default.argument.values.csproj.CoreCompileInputs.cache
+C:\Users\uo289097\Desktop\TPP\lab2\default.argument.values\obj\Debug\net5.0\@default.argument.values.dll
+C:\Users\uo289097\Desktop\TPP\lab2\default.argument.values\obj\Debug\net5.0\refint\@default.argument.values.dll
+C:\Users\uo289097\Desktop\TPP\lab2\default.argument.values\obj\Debug\net5.0\@default.argument.values.pdb
+C:\Users\uo289097\Desktop\TPP\lab2\default.argument.values\obj\Debug\net5.0\default.argument.values.genruntimeconfig.cache
+C:\Users\uo289097\Desktop\TPP\lab2\default.argument.values\obj\Debug\net5.0\ref\@default.argument.values.dll

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "h6z5Ek3SbUN10tQdx3l9QtvQytKQhD+NEHMD3zLI/IdjDttWSXGOxxlJrh4djcJyg3pY6U/0O8pKyZVugiHtFg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\gabig\\Desktop\\repos\\TPP\\Laboratorios\\lab7casa\\lab7\\linq\\extensores.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gabig\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\gabig\\.nuget\\packages\\system.data.datasetextensions\\4.5.0\\system.data.datasetextensions.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

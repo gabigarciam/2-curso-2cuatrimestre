@@ -125,11 +125,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gabig\\OneDrive\\TPP\\Laboratorios\\lab6 (2)\\lab6\\lab6\\currying\\currying.csproj",
+      "projectUniqueName": "C:\\Users\\gabig\\Desktop\\repos\\TPP\\Laboratorios\\lab6 (2)\\lab6\\lab6\\currying\\currying.csproj",
       "projectName": "currying",
-      "projectPath": "C:\\Users\\gabig\\OneDrive\\TPP\\Laboratorios\\lab6 (2)\\lab6\\lab6\\currying\\currying.csproj",
+      "projectPath": "C:\\Users\\gabig\\Desktop\\repos\\TPP\\Laboratorios\\lab6 (2)\\lab6\\lab6\\currying\\currying.csproj",
       "packagesPath": "C:\\Users\\gabig\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gabig\\OneDrive\\TPP\\Laboratorios\\lab6 (2)\\lab6\\lab6\\currying\\obj\\",
+      "outputPath": "C:\\Users\\gabig\\Desktop\\repos\\TPP\\Laboratorios\\lab6 (2)\\lab6\\lab6\\currying\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

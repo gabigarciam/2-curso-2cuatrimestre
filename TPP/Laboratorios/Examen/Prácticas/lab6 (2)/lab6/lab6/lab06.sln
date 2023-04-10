@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "closures", "closures\closures.csproj", "{129A24E8-7DCF-4F39-BB2B-893620210F8F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "generators", "generators\generators.csproj", "{C1C411BC-76F9-40C7-AA73-1AAF72481E98}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "memoization", "memoization\memoization.csproj", "{4D2C7186-83D6-4C95-B755-9E9FCB82D510}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "currying", "currying\currying.csproj", "{BEDC1040-43E1-4818-AB3E-36D73D140DA5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{129A24E8-7DCF-4F39-BB2B-893620210F8F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{129A24E8-7DCF-4F39-BB2B-893620210F8F}.Debug|x86.Build.0 = Debug|Any CPU
+		{129A24E8-7DCF-4F39-BB2B-893620210F8F}.Release|x86.ActiveCfg = Release|x86
+		{129A24E8-7DCF-4F39-BB2B-893620210F8F}.Release|x86.Build.0 = Release|x86
+		{C1C411BC-76F9-40C7-AA73-1AAF72481E98}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C1C411BC-76F9-40C7-AA73-1AAF72481E98}.Debug|x86.Build.0 = Debug|Any CPU
+		{C1C411BC-76F9-40C7-AA73-1AAF72481E98}.Release|x86.ActiveCfg = Release|x86
+		{C1C411BC-76F9-40C7-AA73-1AAF72481E98}.Release|x86.Build.0 = Release|x86
+		{4D2C7186-83D6-4C95-B755-9E9FCB82D510}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4D2C7186-83D6-4C95-B755-9E9FCB82D510}.Debug|x86.Build.0 = Debug|Any CPU
+		{4D2C7186-83D6-4C95-B755-9E9FCB82D510}.Release|x86.ActiveCfg = Release|x86
+		{4D2C7186-83D6-4C95-B755-9E9FCB82D510}.Release|x86.Build.0 = Release|x86
+		{BEDC1040-43E1-4818-AB3E-36D73D140DA5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BEDC1040-43E1-4818-AB3E-36D73D140DA5}.Debug|x86.Build.0 = Debug|Any CPU
+		{BEDC1040-43E1-4818-AB3E-36D73D140DA5}.Release|x86.ActiveCfg = Release|x86
+		{BEDC1040-43E1-4818-AB3E-36D73D140DA5}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8CC5FF03-2866-4D2A-A3A5-DF066FD8EE5F}
+	EndGlobalSection
+EndGlobal

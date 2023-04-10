@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Oblc31+Unsyjhp7i8J2CnVFQ8ywGh2GE1cHhmwwuYHEDpDwOYLzupC2quV40nQ4vUYT8dmBqfni8y0e+24oOFg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\gabig\\Desktop\\TPP\\Laboratorios\\P2\\TPP\\lab2\\extension.methods\\extension.methods.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gabig\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\gabig\\.nuget\\packages\\system.data.datasetextensions\\4.5.0\\system.data.datasetextensions.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

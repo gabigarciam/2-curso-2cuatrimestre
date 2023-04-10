@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZMn9jdyoRO3bpprJo3/cwN4Qfhf8dfLM83bVmPWgMsbsOCaPp88anRIx6CciK714hOWwgHhdtZkYVps2Lepmng==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\gabig\\Desktop\\repos\\TPP\\Laboratorios\\p4\\Laboratorios\\lab4Clase\\lab3\\algorithms\\algorithms.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gabig\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\gabig\\.nuget\\packages\\system.data.datasetextensions\\4.5.0\\system.data.datasetextensions.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

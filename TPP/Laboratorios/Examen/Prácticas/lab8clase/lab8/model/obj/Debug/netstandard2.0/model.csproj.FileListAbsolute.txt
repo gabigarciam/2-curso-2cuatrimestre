@@ -1,0 +1,8 @@
+C:\Users\uo289097\Desktop\lab8\lab8\model\bin\Debug\netstandard2.0\model.deps.json
+C:\Users\uo289097\Desktop\lab8\lab8\model\bin\Debug\netstandard2.0\model.dll
+C:\Users\uo289097\Desktop\lab8\lab8\model\bin\Debug\netstandard2.0\model.pdb
+C:\Users\uo289097\Desktop\lab8\lab8\model\obj\Debug\netstandard2.0\model.csproj.AssemblyReference.cache
+C:\Users\uo289097\Desktop\lab8\lab8\model\obj\Debug\netstandard2.0\model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\uo289097\Desktop\lab8\lab8\model\obj\Debug\netstandard2.0\model.csproj.CoreCompileInputs.cache
+C:\Users\uo289097\Desktop\lab8\lab8\model\obj\Debug\netstandard2.0\model.dll
+C:\Users\uo289097\Desktop\lab8\lab8\model\obj\Debug\netstandard2.0\model.pdb

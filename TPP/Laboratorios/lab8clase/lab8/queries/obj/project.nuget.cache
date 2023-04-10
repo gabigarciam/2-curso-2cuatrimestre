@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "NMQ31V5Afa0IkmntM+On0LsuFFSn8j4v4V3efhCkQLbr77uJQ7EgyRm8aV6wZQXlVyqlYixhiHYGu/cCgZ37GA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\gabig\\Desktop\\repos\\TPP\\Laboratorios\\lab8clase\\lab8\\queries\\queries.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gabig\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\gabig\\.nuget\\packages\\system.data.datasetextensions\\4.5.0\\system.data.datasetextensions.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

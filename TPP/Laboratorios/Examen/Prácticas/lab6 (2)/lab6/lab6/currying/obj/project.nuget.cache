@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "05tbDARBsWD+IOJy/n2OazKD/IjtRpY8S+tKH6HgIt4QpnzeZ8Q23f70XTzcyAg7GLj6yBw62nse3P1BH9brXw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\gabig\\Desktop\\repos\\TPP\\Laboratorios\\Examen\\Prácticas\\lab6 (2)\\lab6\\lab6\\currying\\currying.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gabig\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\gabig\\.nuget\\packages\\system.data.datasetextensions\\4.5.0\\system.data.datasetextensions.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
