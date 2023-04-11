@@ -517,6 +517,8 @@ void OperatingSystem_HandleSystemCall() {
 				ComputerSystem_DebugMessage(116, SHORTTERMSCHEDULE, oldId,
 				programList[processTable[oldId].programListIndex]->executableName, 
 				newId, programList[processTable[newId].programListIndex]->executableName);
+				//El shortTermScheduler devuelve el primer proceso user de la cola de listos. En caso de no haberlo,
+				//el primer daemon de la cola de listos. El dispatch asigna el procesador al proceso que se le pasa.
 				OperatingSystem_PreemptRunningProcess();
 				OperatingSystem_Dispatch(OperatingSystem_ShortTermScheduler());
 				OperatingSystem_PrintStatus();
@@ -535,15 +537,18 @@ void OperatingSystem_HandleSystemCall() {
 			} else {
 				processTable[executingProcessID].whenToWakeUp += abs(Processor_GetAccumulator()); 
 			}
+			//Si se puede añadir el proceso a la cola de dormidos, entonces se muestra el mensaje y se le asigna 
+			//el estado blocked
 			if(Heap_add(executingProcessID, sleepingProcessesQueue, QUEUE_WAKEUP,
 			&(numberOfSleepingProcesses), PROCESSTABLEMAXSIZE) >= 0){
-			//	int previousState = processTable[systemCallID].state;
 				OperatingSystem_ShowTime(SYSPROC);
 				ComputerSystem_DebugMessage(110, SYSPROC, executingProcessID, 
 				programList[processTable[executingProcessID].programListIndex] -> executableName, 
 				statesNames[processTable[executingProcessID].state], statesNames[BLOCKED]);
 				processTable[executingProcessID].state = BLOCKED;
 			}
+			//El shortTermScheduler devuelve el primer proceso user de la cola de listos. En caso de no haberlo, 
+			//el primer daemon de la cola de listos. El dispatch asigna el procesador al proceso que se le pasa.
 			OperatingSystem_Dispatch(OperatingSystem_ShortTermScheduler());
 			OperatingSystem_PrintStatus();
 	}
@@ -571,26 +576,32 @@ void OperatingSystem_HandleClockInterrupt(){
 	ComputerSystem_DebugMessage(120, INTERRUPT, clockInterrupts);
 	int unlocked = 0;
 	int process = NOPROCESS;
+	//Mientras que haya procesos dormidos y whenToWakeUp sea igual a clock interrupts 
 	while (numberOfSleepingProcesses > 0 && 
 	processTable[(Heap_getFirst(sleepingProcessesQueue, numberOfSleepingProcesses))].whenToWakeUp == clockInterrupts)
 	{
-		process = OperatingSystemExtractorFromBlocked();
+		//Extraemos el proceso de los blocked y lo movemos al estado ready 
+		process = OperatingSystemExtractorFromBlocked();	
 		unlocked++;
 		OperatingSystem_MoveToTheREADYState(process);	
 	}
-	if(unlocked >= 1){
+	if(unlocked >= 1){	//Si desbloqueamos más de uno, comprobamos si es necesario cambiar el proceso en ejecución
 		OperatingSystem_PrintStatus();
 		checkPriority();
-	} // else if (numberOfReadyToRunProcesses[DAEMONSQUEUE] > 0){
-	// 	int mostPrioritaryDaemons = readyToRunQueue[DAEMONSQUEUE][0].info;
-	// 	if(processTable[executingProcessID].queueID == DAEMONSQUEUE &&    //Si el proceso actual es Daemon
-	// 	(processTable[executingProcessID].priority > processTable[mostPrioritaryDaemons].priority)){
-	// 		changeProcess(mostPrioritaryDaemons);
-	// 	}
-	// }
+	} 
+	if (numberOfReadyToRunProcesses[DAEMONSQUEUE] > 0){
+		int mostPrioritaryDaemons = readyToRunQueue[DAEMONSQUEUE][0].info;
+		if(processTable[executingProcessID].queueID == DAEMONSQUEUE &&    //Si el proceso actual es Daemon
+		(processTable[executingProcessID].priority > processTable[mostPrioritaryDaemons].priority)){
+			changeProcess(mostPrioritaryDaemons);
+		}
+	}
 	return; 
-} 
+}
 
+/**
+ * Extrae el proceso más prioritario de la cola de sleeping
+*/
 int OperatingSystemExtractorFromBlocked(){
 	int selectedProcess = NOPROCESS;
 
@@ -599,55 +610,39 @@ int OperatingSystemExtractorFromBlocked(){
 	return selectedProcess;
 }
 
+/**
+ * Comprueba la prioridad del proceso en ejecución y lo cambia en caso de encontrar uno más prioritario
+*/
 void checkPriority(){
-	int mostPrioritaryUser = readyToRunQueue[USERPROCESSQUEUE][0].info;
+	int mostPrioritaryUser = readyToRunQueue[USERPROCESSQUEUE][0].info;	//Obtenemos el info del proceso más prioritario
 
-	if(numberOfReadyToRunProcesses[USERPROCESSQUEUE] > 0 && 
-	processTable[executingProcessID].queueID == USERPROCESSQUEUE){
+	if(numberOfReadyToRunProcesses[USERPROCESSQUEUE] > 0 && 		//Si hay uno o más users ready
+	processTable[executingProcessID].queueID == USERPROCESSQUEUE){ 	//y el proceso actual es user
+		//Si la prioridad del proceso actual es mayor que la del proceso más prioritario de los ready, cambiamos 
+		//el proceso
 		if(processTable[executingProcessID].priority > processTable[mostPrioritaryUser].priority){
 			changeProcess(mostPrioritaryUser);
 		}
+	//Si el proceso actual no es user y hay procesos user ready, cambiamos el proceso por el más prioritario de 
+	//los users
 	} else if (numberOfReadyToRunProcesses[USERPROCESSQUEUE] > 0){
 		changeProcess(mostPrioritaryUser);
 	}
 }
 
+/**
+ * Cambia el proceso en ejecución 
+ */
 void changeProcess(int PID){
 	OperatingSystem_ShowTime(SHORTTERMSCHEDULE);
 	ComputerSystem_DebugMessage(121, SHORTTERMSCHEDULE, executingProcessID,
 	programList[processTable[executingProcessID].programListIndex] -> executableName,
 	PID, programList[processTable[PID].programListIndex] -> executableName);
+	//El preempt extrae el proceso en ejecución del procesador, guardando los registros y moviendo el proceso 
+	//al estado ready
 	OperatingSystem_PreemptRunningProcess();
+	//El shortTermScheduler devuelve el primer proceso user de la cola de listos. En caso de no haberlo, 
+	//el primer daemon de la cola de listos. El dispatch asigna el procesador al proceso que se le pasa.
 	OperatingSystem_Dispatch(OperatingSystem_ShortTermScheduler());
 	OperatingSystem_PrintStatus();
 }
-
-//Comprobar en la cola de listos
-// int ItIsNecesaryToChangeProcess(){
-// 	//Si el proceso en ejecucuión es Daemon y hay un user devolvemos 1
-// 	//Sino comprobar las prioridades de la misma cola del proceso en ejecucuión
-// 	//Con Heap_getFirst
-// 	int desbloqueos = 0;
-// 	int process = NOPROCESS;
-// 	while (numberOfSleepingProcesses > 0 && 
-// 	processTable[(Heap_getFirst(sleepingProcessesQueue, numberOfSleepingProcesses))].whenToWakeUp == clockInterrupts)
-// 	{
-// 		process = OperatingSystemExtractorFromBlocked();
-// 		desbloqueos++;
-// 		OperatingSystem_ExtractFromReadyToRun(process);
-// 	}
-// 	if(desbloqueos >= 1){
-// 		OperatingSystem_PrintStatus();
-// 		checkPriority();
-// 	} else if (numberOfReadyToRunProcesses[DAEMONSQUEUE] > 0){
-// 		int mostPrioritaryDaemons = readyToRunQueue[DAEMONSQUEUE][0].info;
-// 		if(processTable[executingProcessID].queueID == DAEMONSQUEUE && 
-// 		(processTable[executingProcessID].priority > 
-// 		processTable[mostPrioritaryDaemons].priority)){
-// 			cambiaProceso(mostPrioritaryDaemons);
-// 		}
-// 	}
-// 	return 1;	//true
-// 	//si es 1 llamar al PreemptRunningProcess
-// 	//si es 1 llamar al ShortTermScheduler y al Dispatch
-// }
