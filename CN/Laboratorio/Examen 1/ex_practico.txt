@@ -1,0 +1,60 @@
+#Examen ej1
+"""
+Created on Mon Mar 13 18:24:41 2023
+
+@author: uo289097
+"""
+
+def mcdEuclides(a,b):
+    r = a % b   #obtenemos el resto de la división 
+    while(r != 0):
+        a = b
+        b = r
+        r = a % b
+    return b
+    
+year = 2023    
+dni = 58446843
+mcd = mcdEuclides(dni,year)
+print(mcd)
+#El resultado al aplicar mcdEuclides con mi DNI es 7
+
+#------------------------------------
+#Examen ej2
+"""
+import numpy as np
+import matplotlib.pyplot as plt
+import sympy as sym
+
+def newton(f,df,x0,tol=1.e-6,maxiter=100):
+
+    error = np.inf
+    k = 0
+    x = x0
+    
+    while error > tol and k < maxiter:
+        
+        xant = x
+        x = xant - f(xant) / df(xant) 
+        
+        error = np.abs(x - xant)
+        k += 1
+        
+    return x, k 
+ 
+f =  lambda x: x**4 - 6.4 * x**3 + 6.45 * x**2 + 20.538*x - 31.752
+df = lambda x: 4*x**3 - 3*6.4*x**2 + 2*6.45*x + 20.538  
+
+x = np.linspace(0,5,100)  #Establecemos el intervalo de la gráfica
+#Dibujamos la gráfica
+plt.figure()
+plt.plot(x,f(x))
+plt.plot(x,0*x,'k')
+plt.show()
+#Establecemos el punto inicial y lo aplicamos sobre Newton
+x0 = 1.7
+sol1, i1 = newton(f,df,x0)
+print("newton: ", sol1, i1)
+
+#El resultado de aplicar newton es: 2.0999991781674865
+
