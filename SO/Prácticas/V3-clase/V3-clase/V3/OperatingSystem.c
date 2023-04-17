@@ -609,7 +609,7 @@ void OperatingSystem_HandleClockInterrupt(){
 	if(OperatingSystem_LongTermScheduler() >= 1 || unlocked >= 1){
 		checkPriority();
 	} 
-	if (numberOfNotTerminatedUserProcesses == 0 && OperatingSystem_IsThereANewProgram() == NOPROCESS){
+	if (numberOfNotTerminatedUserProcesses == 0 && numberOfProgramsInArrivalTimeQueue == 0){
 		OperatingSystem_ReadyToShutdown();
 	}
 	 if (numberOfReadyToRunProcesses[DAEMONSQUEUE] > 0){
