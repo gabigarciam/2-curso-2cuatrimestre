@@ -1,0 +1,15 @@
+L7_Ex1: lagrange_fund
+L7_Ex2: polinomio_lagrange (Necesita el anterior)
+L7_Ex3: chebyshev
+L8_Ex1: aprox1
+L8_Ex2: Aproximación
+L8_Ex3: approx2(f,deg,a,b,prin=False)
+L9_Ex1: dibujo(f,a,b,nodos), punto_medio(f,a,b,p=False), 
+	  trapecio(f,a,b,p=False), simpson(f,a,b,p=False),
+	  punto_medio_comp(f,a,b,n), trapecio_comp(f,a,b,n) y 
+	  simpson_comp(f,a,b,n)
+L9_Ex2: gauss(f,a,b,n,p=False) necesario dibujo del ejercicio anterior
+L9_Ex3: newton_cotes(f,a,b,n), grado_de_precision(formula,n)
+L10_Ex1: jacobi(A,b,tol,maxiter=1000)
+L10_Ex2: gauss_seidel(A,b,tol,maxiter=1000)
+L10_Ex3: SOR(A,b,w,tol,maxiter=1000)
