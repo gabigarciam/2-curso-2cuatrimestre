@@ -1,0 +1,8 @@
+96
+10
+INC 1
+NOP
+TRAP 7 3
+INC -1
+TRAP 4
+TRAP 3
