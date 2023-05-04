@@ -1,0 +1,97 @@
+ Cu´ando es un sistema inform´atico seguro?
+– Cuando garantiza que un usuario leg´ıtimo pueda trabajar con ´el.
+– Cuando impide a un usuario ileg´ıtimo trabajar con ´el.
+– Cuando incluye un antivirus.
+– Cuando incluye un firewall.
+ Cu´ales son los objetivos cl´asicos de seguridad?
+– Confidencialidad.
+– Intengridad.
+– Disponibilidad.
+– Rendimiento.
+ En seguridad inform´atica, una amenaza es
+– Una t´ecnica para atacar un sistema.
+– Una persona que puede da˜nar un sistema.
+– Una debilidad en la seguridad del sistema.
+– Una da˜no que puede sufrir el sistema con una probabilidad significativa.
+ En seguridad inform´atica, una vulnerabilidad es
+– Una t´ecnica para atacar un sistema.
+– Una persona que puede da˜nar un sistema.
+– Una debilidad en la seguridad del sistema.
+– Una da˜no que puede sufrir el sistema con una probabilidad significativa.
+ En seguridad inform´atica, un exploit es
+– Una t´ecnica para atacar un sistema.
+– Una persona que puede da˜nar un sistema.
+– Una debilidad en la seguridad del sistema.
+– Una da˜no que puede sufrir el sistema con una probabilidad significativa.
+ Sniffing (o eavesdropping, o escucha ilegal) es una amenaza a
+– La confidencialidad.
+– La integridad.
+– La disponibilidad.
+– todos los anteriores.
+ Man in the middle es una amenaza a
+– La confidencialidad.
+– La integridad.
+– La disponibilidad.
+– todos los anteriores.
+ Un ataque DDOS (Denegaci´on de servicio distribuido) es una amenaza a
+1
+– La confidencialidad.
+– La integridad.
+– La disponibilidad.
+– todos los anteriores.
+ La usurpaci´on de identidad es una ataque a:
+– La confidencialidad.
+– La integridad.
+– La disponibilidad.
+– todos los anteriores.
+ La usurpaci´on de identidad es una ataque a:
+– La confidencialidad.
+– La integridad.
+– La disponibilidad.
+– todos los anteriores.
+ Robar un disco duro es una ataque a:
+– La confidencialidad.
+– La integridad.
+– La disponibilidad.
+– todos los anteriores.
+ Una medida fundamental para protegernos de los ataques de d´ıa cero es
+– Instalar un antivirus
+– Instalar un firewall
+– Mantener el sistema actualizado
+– Instalar s´olo el software que necesitemos
+ Qu´e medidas puede implementar el SO para hacerlo m´as seguro?
+– Configurar l´ımites para el uso de los recursos (procesos, memoria, ...)
+– Asignar los privilegios con cuidado.
+– Usar siempre comunicaciones cifradas.
+– Restringir desde d´onde se pueden realizar operaciones delicadas
+ Qu´e medidas puede implementar el SO para hacerlo m´as seguro?
+– Configurar l´ımites para el uso de los recursos (procesos, memoria, ...)
+– Asignar los privilegios con cuidado.
+– Usar siempre comunicaciones cifradas.
+– Restringir desde d´onde se pueden realizar operaciones delicadas
+ Para autenticar a un usuario la opci´on m´as segura es
+– Utilizar contrase˜nas.
+– Usar biom´etricos.
+– Usar elementos f´ısicos (tarjetas, llaves, ....)
+– Usar una combinaci´on de las anteriores.
+ Para controlar el acceso a los recursos (como ficheros), el sistema operativo define
+– Dominios de protecci´on
+– Permisos
+– Grupos
+– Tanto dominios de protecci´on como permisos.
+ Las listas de control de acceso
+– Almacenan permisos en una lista ´unica.
+– asocia a cada usuario los permisos para acceder a cada recurso.
+2
+– asocia a cada recurso los permisos que tiene cada usuario o grupo
+– Es una t´ecnica para controlar el acceso al sistema.
+ Los dominios de protecci´on tradicionales son
+– Usuario, grupo, otros.
+– Usuarios individuales
+– Grupos
+– Todos los anteriores
+ Los permisos de acceso t´ıpicos son
+– Leer, escribir, ejecutar.
+– Leer, escribir, borrar.
+– Leer, escribir, borrar, ejecutar y crear.
+– Depende del sistema operativo.
