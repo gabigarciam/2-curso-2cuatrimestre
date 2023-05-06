@@ -1,0 +1,9 @@
+Se desea sustituir la estrategia de asignación de memoria de “mejor ajuste” (best-fit), implementada por el simulador, por una estrategia de “siguiente ajuste” (next-fit), de la manera siguiente: 
+
+		*La tabla de particiones se recorre siempre en orden creciente de número de partición, y se considera que la partición siguiente a la última es la primera partición (es decir, la tabla de particiones se recorre como una estructura de datos circular). 
+
+		*La primera operación de búsqueda para el primer proceso comienza en la partición 0; las siguientes operaciones de búsqueda comenzarán en la partición siguiente a la última partición asignada y para la que el proceso correspondiente se creó con éxito. 
+
+		*Se asigna la primera partición encontrada con tamaño suficiente para el proceso.
+
+./Simulator ex3 ex3 ex4 ex5 5 ex4 10 ex6 10 ex6 10

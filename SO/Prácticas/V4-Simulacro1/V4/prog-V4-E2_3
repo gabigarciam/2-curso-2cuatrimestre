@@ -1,0 +1,6 @@
+30
+100
+INC 1
+NOP
+DIV 2 0
+WRITE 2

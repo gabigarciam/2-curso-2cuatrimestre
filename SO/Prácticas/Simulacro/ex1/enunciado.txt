@@ -1,0 +1,3 @@
+Se desea impedir que se creen procesos con demasiado retraso sobre su instante de llegada. Por tanto, si el sistema operativo intenta crear un proceso más de 3 tics de reloj después del instante de llegada del programa correspondiente, la creación del proceso no tendrá lugar y se mostrará un mensaje por pantalla como los del ejemplo (usando la sección EXAM y en color magenta @M). 
+
+./Simulator --debugSections=XD iDontExist 0 ex1 0 iDontExist 1 ex2 2 ex1 3 ex1 5 

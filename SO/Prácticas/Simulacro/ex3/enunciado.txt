@@ -1,0 +1,9 @@
+Modifica el simulador para que: 
+
+Cuando se intente crear un proceso y no sea posible hacerlo en ese momento por no estar disponible alguno de los recursos necesarios, si bien posteriormente sí pueda ser posible dicha creación, se vuelva a intentar transcurridas 5 interrupciones de reloj. Además del mensaje de error, se mostrará un mensaje (sección EXAM, color magenta) como el siguiente: 
+
+[10] Process creation for program [programName] has been postponed. 
+
+Se sugiere probar el simulador ya modificado en las condiciones siguientes: 
+
+./Simulator Pr1 10 Pr1 10 Pr2 10 Pr3 9 Pr3 30 Pr3 30 
