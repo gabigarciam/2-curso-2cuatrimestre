@@ -1,0 +1,299 @@
+Se desea impedir que se creen procesos con demasiado retraso sobre su instante de llegada. Por tanto, si el sistema operativo intenta crear un proceso más de 3 tics de reloj después del instante de llegada del programa correspondiente, la creación del proceso no tendrá lugar y se mostrará un mensaje por pantalla como los del ejemplo (usando la sección EXAM y en color magenta @M). 
+
+./Simulator --debugSections=XD iDontExist 0 ex1 0 iDontExist 1 ex2 2 ex1 3 ex1 5 
+
+Salida esperada:
+        [0] ERROR:Program iDontExist is not valid[--- it does not exist ---]
+        [7] ERROR: excessive delay for program iDontExist with arrival time 1
+        [7] ERROR: excessive delay for program ex2 with arrival time 2
+        [7] ERROR: excessive delay for program ex1 with arrival time 3
+        [21] The system will shut down now...
+[29] END of the simulation
+
+Salida completa:
+
+40 messages loaded from file messagesTCH.txt
+23 messages loaded from file messagesSTD.txt
+0 Asserts Loaded
+[0] User program list:
+[0]     Program [iDontExist] with arrival time [0]
+[0]     Program [ex1] with arrival time [0]
+[0]     Program [iDontExist] with arrival time [1]
+[0]     Program [ex2] with arrival time [2]
+[0]     Program [ex1] with arrival time [3]
+[0]     Program [ex1] with arrival time [5]
+        [0] Running Process Information:
+                [--- No running process ---]
+        [0] Ready-to-run processes queue:
+        USER: -EMPTY-
+        DAEMONS: -EMPTY-
+        [0] SLEEPING Queue:
+                [--- empty queue ---]
+        [0] PID association with program's name:
+                [--- NO process association ---]
+        [0] Arrival Time Queue:
+                [SystemIdleProcess, 0, DAEMON-PROGRAM]
+                [iDontExist, 0, USER-PROGRAM]
+                [ex1, 0, USER-PROGRAM]
+                [iDontExist, 1, USER-PROGRAM]
+                [ex2, 2, USER-PROGRAM]
+                [ex1, 3, USER-PROGRAM]
+                [ex1, 5, USER-PROGRAM]
+        [0] Main memory state (during system initialization):
+                [0] [0 -> 4][AVAILABLE]
+                [1] [4 -> 12][AVAILABLE]
+                [2] [16 -> 16][AVAILABLE]
+                [3] [32 -> 96][AVAILABLE]
+                [4] [128 -> 64][AVAILABLE]
+                [5] [192 -> 16][AVAILABLE]
+                [6] [208 -> 32][AVAILABLE]
+        [0] Process [3 - SystemIdleProcess] requests [4] memory possitions 
+        [0] New process [3 - SystemIdleProcess] moving to the [NEW] state
+        [0] Main memory state (before allocating memory):
+                [0] [0 -> 4][AVAILABLE]
+                [1] [4 -> 12][AVAILABLE]
+                [2] [16 -> 16][AVAILABLE]
+                [3] [32 -> 96][AVAILABLE]
+                [4] [128 -> 64][AVAILABLE]
+                [5] [192 -> 16][AVAILABLE]
+                [6] [208 -> 32][AVAILABLE]
+        [0] Partition[0: 0-> 4] has been assigned to process [3 - SystemIdleProcess]
+        [0] Main memory state (after allocating memory):
+                [0] [0 -> 4][3 - SystemIdleProcess]
+                [1] [4 -> 12][AVAILABLE]
+                [2] [16 -> 16][AVAILABLE]
+                [3] [32 -> 96][AVAILABLE]
+                [4] [128 -> 64][AVAILABLE]
+                [5] [192 -> 16][AVAILABLE]
+                [6] [208 -> 32][AVAILABLE]
+        [0] Process [3 - SystemIdleProcess] moving from the [NEW] state to the [READY] state
+        [0] ERROR:Program iDontExist is not valid[--- it does not exist ---]
+        [0] Process [0 - ex1] requests [64] memory possitions 
+        [0] New process [0 - ex1] moving to the [NEW] state
+        [0] Main memory state (before allocating memory):
+                [0] [0 -> 4][3 - SystemIdleProcess]
+                [1] [4 -> 12][AVAILABLE]
+                [2] [16 -> 16][AVAILABLE]
+                [3] [32 -> 96][AVAILABLE]
+                [4] [128 -> 64][AVAILABLE]
+                [5] [192 -> 16][AVAILABLE]
+                [6] [208 -> 32][AVAILABLE]
+        [0] Partition[4: 128-> 64] has been assigned to process [0 - ex1]
+        [0] Main memory state (after allocating memory):
+                [0] [0 -> 4][3 - SystemIdleProcess]
+                [1] [4 -> 12][AVAILABLE]
+                [2] [16 -> 16][AVAILABLE]
+                [3] [32 -> 96][AVAILABLE]
+                [4] [128 -> 64][0 - ex1]
+                [5] [192 -> 16][AVAILABLE]
+                [6] [208 -> 32][AVAILABLE]
+        [0] Process [0 - ex1] moving from the [NEW] state to the [READY] state
+        [0] Running Process Information:
+                [--- No running process ---]
+        [0] Ready-to-run processes queue:
+        USER:[0,1] 
+        DAEMONS:[3,100] 
+        [0] SLEEPING Queue:
+                [--- empty queue ---]
+        [0] PID association with program's name:
+                PID: 0 -> ex1
+                PID: 3 -> SystemIdleProcess
+        [0] Arrival Time Queue:
+                [iDontExist, 1, USER-PROGRAM]
+                [ex2, 2, USER-PROGRAM]
+                [ex1, 3, USER-PROGRAM]
+                [ex1, 5, USER-PROGRAM]
+        [0] Process [0 - ex1] moving from the [READY] state to the [EXECUTING] state
+[1] {0D 000 000}IRET 0 0 (PID: 0, PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+[2] {04 003 000}TRAP 3 0 (PID: 0, PC: 1, Accumulator: 0, PSW: 0002 [--------------Z-])
+[3] {0C 002 000}OS 2 0 (PID: 0, PC: 242, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+        [4] Process [0 - ex1] has requested to terminate
+        [4] Process [0 - ex1] moving from the [EXECUTING] state to the [EXIT] state
+        [4] Main memory state (before realising memory):
+                [0] [0 -> 4][3 - SystemIdleProcess]
+                [1] [4 -> 12][AVAILABLE]
+                [2] [16 -> 16][AVAILABLE]
+                [3] [32 -> 96][AVAILABLE]
+                [4] [128 -> 64][0 - ex1]
+                [5] [192 -> 16][AVAILABLE]
+                [6] [208 -> 32][AVAILABLE]
+        [4] Partition [4: 128-> 64] used by process [0 - ex1] has been released
+        [4] Main memory state (after realising memory):
+                [0] [0 -> 4][3 - SystemIdleProcess]
+                [1] [4 -> 12][AVAILABLE]
+                [2] [16 -> 16][AVAILABLE]
+                [3] [32 -> 96][AVAILABLE]
+                [4] [128 -> 64][AVAILABLE]
+                [5] [192 -> 16][AVAILABLE]
+                [6] [208 -> 32][AVAILABLE]
+        [4] Process [3 - SystemIdleProcess] moving from the [READY] state to the [EXECUTING] state
+        [4] Running Process Information:
+                [PID: 3, Priority: 100, WakeUp: 0, Queue: DAEMONS]
+        [4] Ready-to-run processes queue:
+        USER: -EMPTY-
+        DAEMONS: -EMPTY-
+        [4] SLEEPING Queue:
+                [--- empty queue ---]
+        [4] PID association with program's name:
+                PID: 0 -> ex1 Zombie process!
+                PID: 3 -> SystemIdleProcess
+        [4] Arrival Time Queue:
+                [iDontExist, 1, USER-PROGRAM]
+                [ex2, 2, USER-PROGRAM]
+                [ex1, 3, USER-PROGRAM]
+                [ex1, 5, USER-PROGRAM]
+[5] {0D 000 000}IRET 0 0 (PID: 3, PC: 0, Accumulator: 0, PSW: 0082 [--------X-----Z-])
+[6] {0C 009 000}OS 9 0 (PID: 3, PC: 246, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+        [7] Clock interrupt number [1] has occurred
+        [7] ERROR: excessive delay for program iDontExist with arrival time 1
+        [7] ERROR: excessive delay for program ex2 with arrival time 2
+        [7] ERROR: excessive delay for program ex1 with arrival time 3
+        [7] Process [1 - ex1] requests [64] memory possitions 
+        [7] New process [1 - ex1] moving to the [NEW] state
+        [7] Main memory state (before allocating memory):
+                [0] [0 -> 4][3 - SystemIdleProcess]
+                [1] [4 -> 12][AVAILABLE]
+                [2] [16 -> 16][AVAILABLE]
+                [3] [32 -> 96][AVAILABLE]
+                [4] [128 -> 64][AVAILABLE]
+                [5] [192 -> 16][AVAILABLE]
+                [6] [208 -> 32][AVAILABLE]
+        [7] Partition[4: 128-> 64] has been assigned to process [1 - ex1]
+        [7] Main memory state (after allocating memory):
+                [0] [0 -> 4][3 - SystemIdleProcess]
+                [1] [4 -> 12][AVAILABLE]
+                [2] [16 -> 16][AVAILABLE]
+                [3] [32 -> 96][AVAILABLE]
+                [4] [128 -> 64][1 - ex1]
+                [5] [192 -> 16][AVAILABLE]
+                [6] [208 -> 32][AVAILABLE]
+        [7] Process [1 - ex1] moving from the [NEW] state to the [READY] state
+        [7] Running Process Information:
+                [PID: 3, Priority: 100, WakeUp: 0, Queue: DAEMONS]
+        [7] Ready-to-run processes queue:
+        USER:[1,1] 
+        DAEMONS: -EMPTY-
+        [7] SLEEPING Queue:
+                [--- empty queue ---]
+        [7] PID association with program's name:
+                PID: 0 -> ex1 Zombie process!
+                PID: 1 -> ex1
+                PID: 3 -> SystemIdleProcess
+        [7] Arrival Time Queue:
+                [--- empty queue ---]
+        [7] Running Process Information:
+                [PID: 3, Priority: 100, WakeUp: 0, Queue: DAEMONS]
+        [7] Ready-to-run processes queue:
+        USER:[1,1] 
+        DAEMONS: -EMPTY-
+        [7] SLEEPING Queue:
+                [--- empty queue ---]
+        [7] PID association with program's name:
+                PID: 0 -> ex1 Zombie process!
+                PID: 1 -> ex1
+                PID: 3 -> SystemIdleProcess
+        [7] Arrival Time Queue:
+                [--- empty queue ---]
+        [7] Process [3 - SystemIdleProcess] is thrown out of the processor by process [1 - ex1]
+        [7] Process [3 - SystemIdleProcess] moving from the [EXECUTING] state to the [READY] state
+        [7] Process [1 - ex1] moving from the [READY] state to the [EXECUTING] state
+        [7] Running Process Information:
+                [PID: 1, Priority: 1, WakeUp: 0, Queue: USER]
+        [7] Ready-to-run processes queue:
+        USER: -EMPTY-
+        DAEMONS:[3,100] 
+        [7] SLEEPING Queue:
+                [--- empty queue ---]
+        [7] PID association with program's name:
+                PID: 0 -> ex1 Zombie process!
+                PID: 1 -> ex1
+                PID: 3 -> SystemIdleProcess
+        [7] Arrival Time Queue:
+                [--- empty queue ---]
+[8] {0D 000 000}IRET 0 0 (PID: 1, PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+[9] {04 003 000}TRAP 3 0 (PID: 1, PC: 1, Accumulator: 0, PSW: 0002 [--------------Z-])
+[10] {0C 002 000}OS 2 0 (PID: 1, PC: 242, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+        [11] Process [1 - ex1] has requested to terminate
+        [11] Process [1 - ex1] moving from the [EXECUTING] state to the [EXIT] state
+        [11] Main memory state (before realising memory):
+                [0] [0 -> 4][3 - SystemIdleProcess]
+                [1] [4 -> 12][AVAILABLE]
+                [2] [16 -> 16][AVAILABLE]
+                [3] [32 -> 96][AVAILABLE]
+                [4] [128 -> 64][1 - ex1]
+                [5] [192 -> 16][AVAILABLE]
+                [6] [208 -> 32][AVAILABLE]
+        [11] Partition [4: 128-> 64] used by process [1 - ex1] has been released
+        [11] Main memory state (after realising memory):
+                [0] [0 -> 4][3 - SystemIdleProcess]
+                [1] [4 -> 12][AVAILABLE]
+                [2] [16 -> 16][AVAILABLE]
+                [3] [32 -> 96][AVAILABLE]
+                [4] [128 -> 64][AVAILABLE]
+                [5] [192 -> 16][AVAILABLE]
+                [6] [208 -> 32][AVAILABLE]
+        [11] Process [3 - SystemIdleProcess] moving from the [READY] state to the [EXECUTING] state
+        [11] Running Process Information:
+                [PID: 3, Priority: 100, WakeUp: 0, Queue: DAEMONS]
+        [11] Ready-to-run processes queue:
+        USER: -EMPTY-
+        DAEMONS: -EMPTY-
+        [11] SLEEPING Queue:
+                [--- empty queue ---]
+        [11] PID association with program's name:
+                PID: 0 -> ex1 Zombie process!
+                PID: 1 -> ex1 Zombie process!
+                PID: 3 -> SystemIdleProcess
+        [11] Arrival Time Queue:
+                [--- empty queue ---]
+[12] {0D 000 000}IRET 0 0 (PID: 3, PC: 3, Accumulator: 0, PSW: 0082 [--------X-----Z-])
+[13] {0C 009 000}OS 9 0 (PID: 3, PC: 246, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+        [14] Clock interrupt number [2] has occurred
+[15] {0D 000 000}IRET 0 0 (PID: 3, PC: 3, Accumulator: 0, PSW: 0082 [--------X-----Z-])
+[16] {0C 009 000}OS 9 0 (PID: 3, PC: 246, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+        [17] Clock interrupt number [3] has occurred
+[18] {0D 000 000}IRET 0 0 (PID: 3, PC: 3, Accumulator: 0, PSW: 0082 [--------X-----Z-])
+[19] {04 003 000}TRAP 3 0 (PID: 3, PC: 4, Accumulator: 0, PSW: 0082 [--------X-----Z-])
+[20] {0C 002 000}OS 2 0 (PID: 3, PC: 242, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+        [21] Process [3 - SystemIdleProcess] has requested to terminate
+        [21] Process [3 - SystemIdleProcess] moving from the [EXECUTING] state to the [EXIT] state
+        [21] Main memory state (before realising memory):
+                [0] [0 -> 4][3 - SystemIdleProcess]
+                [1] [4 -> 12][AVAILABLE]
+                [2] [16 -> 16][AVAILABLE]
+                [3] [32 -> 96][AVAILABLE]
+                [4] [128 -> 64][AVAILABLE]
+                [5] [192 -> 16][AVAILABLE]
+                [6] [208 -> 32][AVAILABLE]
+        [21] Partition [0: 0-> 4] used by process [3 - SystemIdleProcess] has been released
+        [21] Main memory state (after realising memory):
+                [0] [0 -> 4][AVAILABLE]
+                [1] [4 -> 12][AVAILABLE]
+                [2] [16 -> 16][AVAILABLE]
+                [3] [32 -> 96][AVAILABLE]
+                [4] [128 -> 64][AVAILABLE]
+                [5] [192 -> 16][AVAILABLE]
+                [6] [208 -> 32][AVAILABLE]
+        [21] The system will shut down now...
+        [21] Running Process Information:
+                [--- No running process ---]
+        [21] Ready-to-run processes queue:
+        USER: -EMPTY-
+        DAEMONS: -EMPTY-
+        [21] SLEEPING Queue:
+                [--- empty queue ---]
+        [21] PID association with program's name:
+                PID: 0 -> ex1 Zombie process!
+                PID: 1 -> ex1 Zombie process!
+                PID: 3 -> SystemIdleProcess Zombie process!
+        [21] Arrival Time Queue:
+                [--- empty queue ---]
+[22] {0D 000 000}IRET 0 0 (PID: -1, PC: 241, Accumulator: 0, PSW: 0082 [--------X-----Z-])
+[23] {0C 009 000}OS 9 0 (PID: -1, PC: 246, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+        [24] Clock interrupt number [4] has occurred
+[25] {0D 000 000}IRET 0 0 (PID: -1, PC: 241, Accumulator: 0, PSW: 0082 [--------X-----Z-])
+[26] {0C 009 000}OS 9 0 (PID: -1, PC: 246, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+        [27] Clock interrupt number [5] has occurred
+[28] {0D 000 000}IRET 0 0 (PID: -1, PC: 241, Accumulator: 0, PSW: 0082 [--------X-----Z-])
+[29] {0B 000 000}HALT 0 0 (PID: -1, PC: 241, Accumulator: 0, PSW: 0083 [--------X-----ZS])
+[29] END of the simulation
