@@ -1,0 +1,43 @@
+Connection con = getConnection();
+		
+		StringBuilder query = new StringBuilder();
+		query.append("SELECT distinct c.dni, nombre, apellido from clientes c, ventas v where c.dni = v.dni");
+		Statement st = con.createStatement();
+		ResultSet rsClientes = st.executeQuery(query.toString());
+		
+		//Obtener numero de coches comprados y numconcesionarios parámetro dni
+		StringBuilder queryCount = new StringBuilder();
+		queryCount.append("select count(*) as numcoches, COUNT(DISTINCT cifc) as numconc from ventas where dni = ?");
+		PreparedStatement pstCounts = con.prepareStatement(queryCount.toString());
+//		pstCounts.setInt(1, rs.getInt(0));
+		
+		//Datos de los coches comprados con parámetro dni
+		StringBuilder queryCoches = new StringBuilder();
+		queryCoches.append("select c.codcoche, c.nombrech,c.modelo, v.color from coches c, ventas v");
+		queryCoches.append(" where v.codcoche = c.codcoche and v.dni = ?");
+		PreparedStatement pstCars = con.prepareStatement(queryCoches.toString());
+//		pstCars.setInt(1, rs.getInt(0));
+		
+		while(rsClientes.next()) {
+			pstCounts.setString(1, rsClientes.getString("dni"));
+			ResultSet rs = pstCounts.executeQuery();
+			rs.next();
+			
+			System.out.println("- Cliente: " + rsClientes.getString("nombre") + " " + rsClientes.getString("apellido")
+			+ " " + rs.getInt("numcoches") + " " + rs.getInt("numconc"));
+			
+			pstCars.setString(1, rsClientes.getString("dni"));
+			rs = pstCars.executeQuery();
+			
+			while(rs.next()) {
+				System.out.println("---> Coche: "+ rs.getString("codcoche") + " " + rs.getString("nombrech") 
+				+ " " + rs.getString("modelo") + " " + rs.getString("color"));
+			}
+			rs.close();
+		}
+		
+		pstCounts.close();
+		pstCars.close();
+		rsClientes.close();
+		st.close();
+		con.close();
