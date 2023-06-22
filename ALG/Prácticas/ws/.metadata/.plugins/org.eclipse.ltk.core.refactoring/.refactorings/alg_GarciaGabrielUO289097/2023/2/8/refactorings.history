@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;alg_GarciaGabrielUO289097/src/main/java/algestudiante/p0/TiemposVector.xlsx&apos; to &apos;Tiempos.xlsx&apos;" description="Rename resource &apos;TiemposVector.xlsx&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/java/algestudiante/p0/TiemposVector.xlsx" name="Tiempos.xlsx" stamp="1677020126032" updateReferences="true"/>
+</session>

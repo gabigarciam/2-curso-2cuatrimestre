@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="java.io.FileReader"/>
+    <fullyQualifiedTypeName name="java.util.LinkedList"/>
+    <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+    <fullyQualifiedTypeName name="algestudiante.p0.MatrizOperaciones"/>
+    <fullyQualifiedTypeName name="algestudiante.p2.RapidoCentral"/>
+    <fullyQualifiedTypeName name="algestudiante.p2.RapidoFatal"/>
+    <fullyQualifiedTypeName name="algestudiante.p2.RapidoMediana"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="algestudiante.p32.KeyPoint"/>
+    <fullyQualifiedTypeName name="java.util.Collection"/>
+    <fullyQualifiedTypeName name="algestudiante.p32.SkylineProblem"/>
+    <fullyQualifiedTypeName name="algestudiante.p32.Skyline"/>
+    <fullyQualifiedTypeName name="algestudiante.p4.Defensa"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="algestudiante.p5.IslandsPath"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="algestudiante.p6.EjemploMD5"/>
+    <fullyQualifiedTypeName name="algestudiante.p6.RevientaClavesTest"/>
+    <fullyQualifiedTypeName name="algestudiante.p6.RevientaClaves"/>
+    <fullyQualifiedTypeName name="algestudiante.p6.ViajanteBK"/>
+    <fullyQualifiedTypeName name="com.sun.tools.javac.code.Attribute.Array"/>
+    <fullyQualifiedTypeName name="algestudiante.p7.ViajanteRyP"/>
+    <fullyQualifiedTypeName name="algestudiante.p7.EstadoViajante"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+</qualifiedTypeNameHistroy>

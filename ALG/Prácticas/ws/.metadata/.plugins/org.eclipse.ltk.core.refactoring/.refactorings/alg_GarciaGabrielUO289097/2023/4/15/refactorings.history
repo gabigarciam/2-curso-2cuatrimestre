@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;herenciaEnvenenadaMD5.txt&apos; to &apos;alg_GarciaGabrielUO289097/src/main/java/algestudiante.p6&apos;&#x0D;&#x0A;- Original project: &apos;alg_GarciaGabrielUO289097&apos;&#x0D;&#x0A;- Destination element: &apos;alg_GarciaGabrielUO289097/src/main/java/algestudiante.p6&apos;&#x0D;&#x0A;- Original element: &apos;herenciaEnvenenadaMD5.txt&apos;" description="Copy file" destination="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;algestudiante.p6" element1="src/main/java/algestudiante/p6/herenciaEnvenenadaMD5.txt" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1681131955978" units="0" version="1.0"/>
+</session>
